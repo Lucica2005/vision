@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type:ignore
 import copy
 
 import torch

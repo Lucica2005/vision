@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type:ignore
 import torch
 from mmdet.core import bbox2result
 from mmdet.models.builder import DETECTORS

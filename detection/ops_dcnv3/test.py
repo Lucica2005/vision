@@ -3,7 +3,7 @@
 # Copyright (c) 2022 OpenGVLab
 # Licensed under The MIT License [see LICENSE for details]
 # --------------------------------------------------------
-
+# type:ignore
 from __future__ import absolute_import, division, print_function
 
 import math

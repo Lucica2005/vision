@@ -3,7 +3,7 @@
 # Copyright (c) 2022 OpenGVLab
 # Licensed under The MIT License [see LICENSE for details]
 # --------------------------------------------------------
-
+# type:ignore
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

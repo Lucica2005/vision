@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type:ignore
 from mmdet.models.builder import DETECTORS
 from mmdet.models.detectors.detr import DETR
 

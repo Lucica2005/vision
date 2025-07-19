@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type: ignore
 import asyncio
 import os.path as osp
 from argparse import ArgumentParser

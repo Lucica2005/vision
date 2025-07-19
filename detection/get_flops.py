@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type: ignore
 import argparse
 
 import mmcv_custom  # noqa: F401,F403

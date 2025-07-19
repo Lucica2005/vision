@@ -3,7 +3,7 @@
 # Copyright (c) 2022 OpenGVLab
 # Licensed under The MIT License [see LICENSE for details]
 # --------------------------------------------------------
-
+# type:ignore
 from .cbdino_head import CBDINOHead
 from .deformable_detr_head import DeformableDETRHead
 from .detr_head import DETRHead

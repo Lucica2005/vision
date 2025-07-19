@@ -1,0 +1,4 @@
+# ninja log v5
+0	7658	1752906262009127495	/root/lucica/InternImage/detection/ops_dcnv3/build/temp.linux-x86_64-3.8/root/lucica/InternImage/detection/ops_dcnv3/src/cpu/dcnv3_cpu.o	8c8327d3992b7cab
+0	24546	1752906278888195083	/root/lucica/InternImage/detection/ops_dcnv3/build/temp.linux-x86_64-3.8/root/lucica/InternImage/detection/ops_dcnv3/src/vision.o	c8c5662e27c63d2c
+0	43771	1752906298127278718	/root/lucica/InternImage/detection/ops_dcnv3/build/temp.linux-x86_64-3.8/root/lucica/InternImage/detection/ops_dcnv3/src/cuda/dcnv3_cuda.o	a12745803369995b

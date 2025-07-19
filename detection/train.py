@@ -4,6 +4,8 @@
 # Licensed under The MIT License [see LICENSE for details]
 # --------------------------------------------------------
 
+# type: ignore
+
 import argparse
 import copy
 import os
@@ -135,10 +137,9 @@ def main():
 
     # set multi-process settings
     setup_multi_processes(cfg)
-
     # set cudnn_benchmark
     if cfg.get('cudnn_benchmark', False):
-        torch.backends.cudnn.benchmark = True
+        torch.backends.cudnn.benchmark = True  # type: ignore
 
     # work_dir is determined in this priority: CLI > segment in file > filename
     if args.work_dir is not None:
@@ -230,8 +231,8 @@ def main():
     # add an attribute for visualization convenience
     model.CLASSES = datasets[0].CLASSES
 
-    torch.backends.cuda.matmul.allow_tf32 = True
-    torch.backends.cudnn.allow_tf32 = True
+    torch.backends.cuda.matmul.allow_tf32 = True  # type: ignore
+    torch.backends.cudnn.allow_tf32 = True  # type: ignore
 
     train_detector(model,
                    datasets,

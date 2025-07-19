@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# type:ignore
 import numpy as np
 import torch
 import torch.nn as nn
