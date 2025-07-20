@@ -1,4 +1,6 @@
 # dataset settings
+# type: ignore
+
 dataset_type = 'CityscapesDataset'
 data_root = 'data/cityscapes/'
 img_norm_cfg = dict(

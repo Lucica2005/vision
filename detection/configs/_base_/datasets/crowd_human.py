@@ -1,4 +1,6 @@
 # dataset settings
+# type: ignore
+
 dataset_type = 'CrowdHumanDataset'
 data_root = 'data/CrowdHuman/'
 classes = ('person',)
