@@ -7,8 +7,9 @@ _base_ = [
     '../_base_/datasets/TiaoZhanCup_detection.py',
     '../_base_/default_runtime.py'
 ]
-load_from = 'https://huggingface.co/OpenGVLab/InternImage/resolve/main/dino_4scale_cbinternimage_h_objects365_80classes.pth'
-
+#load_from = '/root/autodl-tmp/dino_4scale_cbinternimage_h_objects365_80classes.pth'
+# 使用Objects365预训练模型，因为包含了car, bus, ship等类别
+num_classes = 6
 # 修改数据集路径 - 你需要根据实际情况修改
 data_root = 'data/TiaoZhanCup/'  # 请确保这个路径存在
 
@@ -46,7 +47,7 @@ model = dict(
     bbox_head=dict(
         type='CBDINOHead',
         num_query=900,
-        num_classes=80,
+        num_classes=6,  # TiaoZhanCup数据集的类别数量
         in_channels=2048,  # TODO
         sync_cls_avg_factor=True,
         as_two_stage=True,

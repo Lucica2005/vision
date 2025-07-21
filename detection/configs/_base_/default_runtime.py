@@ -10,7 +10,7 @@ log_config = dict(
 custom_hooks = [dict(type='NumClassCheckHook')]
 
 dist_params = dict(backend='nccl')
-log_level = 'INFO'
+log_level = 'ERROR'
 load_from = None
 resume_from = None
 workflow = [('train', 1)]
