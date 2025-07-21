@@ -198,7 +198,7 @@ lr_config = dict(
 # 修改训练轮数 - 从 20000 改为 1000 进行快速测试
 runner = dict(type='IterBasedRunner', max_iters=1000)  # ← 快速测试
 
-checkpoint_config = dict(interval=100, max_keep_ckpts=3)  # 每100次迭代保存一次
+checkpoint_config = dict(interval=-1, max_keep_ckpts=1)  # 只保存latest
 evaluation = dict(interval=100, save_best='auto')  # 每100次迭代评估一次
 
 # 添加自动学习率缩放配置

@@ -62,7 +62,7 @@ def generate_val_json():
     # 获取所有文件夹并排序，取中间几个文件夹作为验证集
     all_folders = sorted([d for d in os.listdir(images_path) if os.path.isdir(os.path.join(images_path, d))])
     # 取第7-12个文件夹作为验证集（假设总共有26个文件夹）
-    image_folders = all_folders[6:12]  # 取中间6个文件夹
+    image_folders = all_folders[1:3] + all_folders[12:14]+all_folders[18:20]# 取中间6个文件夹
     
     print(f"Processing {len(image_folders)} folders: {image_folders}")
     
